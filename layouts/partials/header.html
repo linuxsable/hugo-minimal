@@ -1,0 +1,17 @@
+{{ $curLanguageName := .Site.Language.LanguageName }}
+<header>
+  <div class="signatures site-title">
+    <a href="{{ .LanguagePrefix }}/">{{ .Site.Author.name }}</a>
+  </div>
+  <p class="bio">I build software for teams at Atlassian and I create modular inspired analogue music under the moniker Atom States.</p>
+</header>
+<div class="row end-xs">
+  {{ range .Site.Languages -}}
+  {{ if ne .LanguageName $curLanguageName }}
+  <div class="lang-switch col-xs-3 col-xs-offset-9">
+    <a href="/{{ .Lang }}/">{{ .LanguageName }}</a>
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
+<div class="header-line"></div>

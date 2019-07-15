@@ -1,0 +1,15 @@
+name = "Hugo Minimal"
+license = "MIT"
+licenselink = ""
+description = "Minimal theme for Hugo."
+homepage = "https://github.com/linuxsable/hugo-minimal"
+tags = [
+  "blog",
+  "minimal",
+]
+features = ["blog"]
+min_version = "0.50"
+
+[author]
+  name = "Tyler Van Hoomissen"
+  homepage = "https://tylervh.com"
